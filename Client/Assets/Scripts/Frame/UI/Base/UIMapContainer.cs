@@ -2,8 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIObject{
+public class UIBaseObject{
+	public virtual string RootName{get;set;}
+	public virtual GameObject GameObject{get;set;}
+	
+	public List<Component> Components;
 
+	public UIBaseObject()
+	{
+		
+	}
 }
 
 public class UIMapContainer {
@@ -13,5 +21,5 @@ public class UIMapContainer {
 
 	}
 
-	private Dictionary<string,UIObject> _map = new Dictionary<string,UIObject>();
+	private Dictionary<string,UIBaseObject> _map = new Dictionary<string,UIBaseObject>();
 }
