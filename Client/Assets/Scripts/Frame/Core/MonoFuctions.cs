@@ -3,17 +3,17 @@
 ***************************************************/
 
 using UnityEngine ;
-
+using System.Collections;
 public class MonoFuctions : MonoBehaviour
 {
-    public static void StartCoroutine(Coroutine coroutine)
+    public static void _StartCoroutine(IEnumerator coroutine)
     {
-        StartCoroutine(coroutine);
+        // StartCoroutine(coroutine);
     }
 
-    public static void StopCoroutine(string coroutine)
+    public static void _StopCoroutine(string coroutine)
     {
-        StopCoroutine(coroutine);
+        // StopCoroutine(coroutine);
     }
 
     

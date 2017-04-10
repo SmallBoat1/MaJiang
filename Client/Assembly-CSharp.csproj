@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Frame\Core\GameControllor.cs" />
+     <Compile Include="Assets\Scripts\Frame\Core\MonoFuctions.cs" />
      <Compile Include="Assets\Scripts\Frame\Core\UIiterface.cs" />
      <Compile Include="Assets\Scripts\Frame\Resource\ResourceMgr.cs" />
      <Compile Include="Assets\Scripts\Frame\UI\Base\UIBaseObject.cs" />
