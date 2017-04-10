@@ -1,18 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-
-public class UIBaseObject{
-	public virtual string RootName{get;set;}
-	public virtual GameObject GameObject{get;set;}
-	
-	public List<Component> Components;
-
-	public UIBaseObject()
-	{
-		
-	}
-}
 
 public class UIMapContainer {
 
