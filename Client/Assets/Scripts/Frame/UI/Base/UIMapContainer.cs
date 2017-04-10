@@ -8,5 +8,5 @@ public class UIMapContainer {
 
 	}
 
-	private Dictionary<string,UIBaseObject> _map = new Dictionary<string,UIBaseObject>();
+	// private Dictionary<string,UIBaseObject> _map = new Dictionary<string,UIBaseObject>();
 }
