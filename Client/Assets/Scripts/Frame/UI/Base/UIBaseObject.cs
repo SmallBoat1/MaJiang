@@ -6,7 +6,6 @@ public class UIBaseObject{
 	public virtual GameObject GameObject{get;set;}
     public Dictionary<string,GameObject> m_objectMap;
 
-    
 	public UIBaseObject()
 	{
         m_objectMap = new Dictionary<string,GameObject>();
