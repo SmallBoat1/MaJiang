@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -46,12 +46,81 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FairyGUI\CopyPastePatch.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Bag\BagMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Bag\BagWindow.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Bag\IconManager.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Bag\MyGLoader.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Basics\BasicsMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Basics\Window1.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Basics\Window2.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\BundleUsage\BundleUsageMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Cooldown\CooldownMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Curve\CurveMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\CutScene\CutSceneMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\CutScene\LevelManager.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\EmitNumbers\EmitComponent.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\EmitNumbers\EmitManager.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\EmitNumbers\EmitNumbersMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Emoji\EmojiMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Emoji\EmojiParser.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\EmojiPro\EmojiProMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Extension\ExtensionMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Extension\MailItem.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Filter\FilterMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Gesture\GestureMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Guide\GuideMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\HeadBar\HeadBarMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\HitTest\HitTestMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Joystick\JoystickMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Joystick\JoystickModule.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\LoopList\LoopListMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\ModalWaiting\GlobalWaiting.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\ModalWaiting\ModalWaitingMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\ModalWaiting\Window4.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Model\ModelMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Particles\CoolComponent.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Particles\ParticlesMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Perspetive\PerspectiveMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\RenderTexture\RenderImage.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\RenderTexture\RenderTextureMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\RenderTexture\Window3.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\ScrollPane\ScrollPaneMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\Transition\TransitionMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\TreeView\TreeViewMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\TurnCard\Card.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\TurnCard\TurnCardMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\TypingEffect\TypingEffectMain.cs" />
+     <Compile Include="Assets\FairyGUI\Examples\VirtualList\VirtualListMain.cs" />
+     <Compile Include="Assets\Scripts\Engin\UnityAnimation.cs" />
+     <Compile Include="Assets\Scripts\Engin\UnityAsset.cs" />
+     <Compile Include="Assets\Scripts\Engin\UnityGameObject.cs" />
+     <Compile Include="Assets\Scripts\Engin\UnityRectTransform.cs" />
+     <Compile Include="Assets\Scripts\Engin\UnityTransform.cs" />
      <Compile Include="Assets\Scripts\Frame\Core\GameControllor.cs" />
      <Compile Include="Assets\Scripts\Frame\Core\MonoFuctions.cs" />
+     <Compile Include="Assets\Scripts\Frame\Core\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Frame\Core\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Frame\Core\UIiterface.cs" />
      <Compile Include="Assets\Scripts\Frame\Resource\ResourceMgr.cs" />
      <Compile Include="Assets\Scripts\Frame\UI\Base\UIBaseObject.cs" />
      <Compile Include="Assets\Scripts\Frame\UI\Base\UIMapContainer.cs" />
+     <Compile Include="Assets\Scripts\Frame\UI\UIComemTools.cs" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\AddOn\FairyGUI-BlurFilter.shader" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-Text.shader" />
+     <None Include="Assets\FairyGUI\Examples\Resources\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+     <None Include="Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
+     <None Include="Assets\FairyGUI\ReadMe - 1.8.1.txt" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-Image.shader" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-Text-Brighter.shader" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+     <None Include="Assets\FairyGUI\Examples\Resources\RenderTexture\FullScreen.shader" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-BMFont.shader" />
+     <None Include="Assets\读我.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/uniyt_5_6/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -73,9 +142,19 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>D:/Program Files/uniyt_5_6/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween">
+ <HintPath>E:/PROJECT/Git/MaJiang/Client/Assets/Plugins/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="FairyGUI">
+ <HintPath>E:/PROJECT/Git/MaJiang/Client/Assets/Plugins/FairyGUI.dll</HintPath>
+ </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>D:/Program Files/uniyt_5_6/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{079D398E-4AFC-CD7E-7881-F923D075EBD1}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

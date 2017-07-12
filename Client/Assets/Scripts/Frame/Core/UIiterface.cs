@@ -21,14 +21,19 @@ public class UIinterface {
     // 初始化界面对象
     public static void InitViewObject<T>(T obj) where T : UIBaseObject
     {
-        if(obj.GameObject) 
+        if(obj.GameObject.Object) 
         {
             return;
         }
         string name = typeof(T).Name;
         //  加载界面prefab
-       obj.GameObject = GameControllor.ResourceMgr.LoadUI(name).gameObject;
+       obj.GameObject.Object = GameControllor.ResourceMgr.Load(name);
     }
+
+    // public static T LoadUI<T>() where T : UIBaseObject
+    // {
+
+    // }
 
     // 解析界面节点
     public static bool ParsePrefab(Transform root,ref Dictionary<string,Transform> dic)
@@ -56,5 +61,4 @@ public class UIinterface {
        name = name +"/" + GetFullName(tran.parent);
        return name;
     }
-
 }
