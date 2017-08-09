@@ -1,20 +1,19 @@
 /********************************************************
-*UIinterface UI界面Api,提供静态方法
+*UIInterface UI界面Api,提供静态方法
 *********************************************************/
 using UnityEngine;
-using UnityEngineInternal;
 using System.Collections.Generic;
 
-public class UIinterface {
+public class UIInterface {
 
     // 构造函数
-    public UIinterface()
+    public UIInterface()
     {
 
     }
 
     // 析构函数
-    ~UIinterface(){
+    ~UIInterface(){
 
     }
 
