@@ -18,7 +18,7 @@ public class UIInterface {
     }
 
     // 初始化界面对象
-    public static void InitViewObject<T>(T obj) where T : UIBaseObject
+    public static void LoadView<T>(T obj) where T : ViewObject
     {
         if(obj.GameObject) 
         {
@@ -26,7 +26,12 @@ public class UIInterface {
         }
         string name = typeof(T).Name;
         //  加载界面prefab
-       obj.GameObject = GameControllor.ResourceMgr.LoadUI(name).gameObject;
+       obj.GameObject = GameControllor.ResourceMgr.LoadUI(name);
+    }
+
+    private void ParseView<T>(T view) where T : ViewObject
+    {
+
     }
 
     // 解析界面节点
