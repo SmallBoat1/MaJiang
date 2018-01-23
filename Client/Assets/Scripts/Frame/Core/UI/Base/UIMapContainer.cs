@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 public class UIMapContainer {
 
@@ -8,5 +7,5 @@ public class UIMapContainer {
 
 	}
 
-	private Dictionary<string,UIBaseObject> _map = new Dictionary<string,UIBaseObject>();
+	private Dictionary<string, ViewObject> _map = new Dictionary<string, ViewObject>();
 }
