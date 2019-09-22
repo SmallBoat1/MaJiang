@@ -47,3 +47,17 @@ Temporary Items
 .apdisk
 Client/Library/
 Client/Temp/
+Client/.vs/Client/v14/.suo
+Client/Assembly-CSharp-Editor-firstpass.csproj
+Client/Assembly-CSharp-Editor.csproj
+Client/Assembly-CSharp-firstpass.csproj
+Client/Client.csproj
+Client/Client.Editor.csproj
+Client/Client.Editor.Plugins.csproj
+Client/Client.Plugins.csproj
+Client/obj/Debug/Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+Client/obj/Debug/Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+Client/obj/Debug/Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
+Client/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
+Client/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
